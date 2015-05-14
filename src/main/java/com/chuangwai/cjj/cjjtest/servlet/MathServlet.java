@@ -16,6 +16,7 @@ public class MathServlet extends HttpServlet{
         try {
             int aa = Integer.parseInt(a);
             int bb = Integer.parseInt(b);
+            System.out.println("a: "+a + " b:"+b);
             response.getWriter().write(aa + bb);
         }catch (Exception e){
             e.printStackTrace();
